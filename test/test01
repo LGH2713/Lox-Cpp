@@ -1,0 +1,5 @@
+The readLine() function, as the name so helpfully implies, reads a line of
+input from the user on the command line and returns the result. To kill an
+interactive command-line app, you usually type Control-D. Doing so signals an
+“end-of-file” condition to the program. When that happens readLine()
+returns null, so we check for that to exit the loop.
