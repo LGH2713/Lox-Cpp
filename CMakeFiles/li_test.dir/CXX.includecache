@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/code/Lox/src/Lox.h
+iostream
+-
+fstream
+-
+list
+-
+sstream
+-
+
+/home/code/Lox/test/main.cc
+../src/Lox.h
+/home/code/Lox/src/Lox.h
+

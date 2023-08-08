@@ -1,0 +1,4 @@
+/home/code/Lox/CMakeFiles/rebuild_cache.dir
+/home/code/Lox/CMakeFiles/edit_cache.dir
+/home/code/Lox/CMakeFiles/li_test.dir
+/home/code/Lox/CMakeFiles/LI.dir

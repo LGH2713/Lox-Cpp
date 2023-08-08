@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/code/Lox/src/Lox.h
+iostream
+-
+fstream
+-
+list
+-
+sstream
+-
+
+/home/code/Lox/src/Scanner.cc
+Scanner.h
+/home/code/Lox/src/Scanner.h
+Lox.h
+/home/code/Lox/src/Lox.h
+
+/home/code/Lox/src/Scanner.h
+vector
+-
+unordered_map
+-
+vector
+-
+map
+-
+string
+-
+Token.h
+/home/code/Lox/src/Token.h
+
+/home/code/Lox/src/Token.h
+TokenType.h
+/home/code/Lox/src/TokenType.h
+string
+-
+
+/home/code/Lox/src/TokenType.h
+

@@ -1,4 +1,4 @@
-#include "Lox.h"
+#include "../src/Lox.h"
 
 int main(int argc, char **argv)
 {

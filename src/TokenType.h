@@ -49,7 +49,7 @@ enum TokenType
     WHILE,
 
     // End of file
-    EOF
+    ENDOFFILE
 };
 
 #endif
