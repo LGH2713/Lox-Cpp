@@ -39,12 +39,31 @@ private:
         tokens.emplace_back(type, text, literal, line);
     };
 
+    static const std::map<std::string, TokenType> keywords;
     std::string source;
     static std::vector<Token> tokens;
     int start = 0;
     int current = 0;
     int line = 1;
 };
+
+const std::map<std::string, TokenType> Scanner::keywords = {
+    {"and", AND},
+    {"class", CLASS},
+    {"else", ELSE},
+    {"false", FALSE},
+    {"for", FOR},
+    {"fun", FUN},
+    {"if", IF},
+    {"nil", NIL},
+    {"or", OR},
+    {"print", PRINT},
+    {"return", RETURN},
+    {"super", SUPER},
+    {"this", THIS},
+    {"true", TRUE},
+    {"var", VAR},
+    {"while", WHILE}};
 
 std::vector<Token> Scanner::tokens;
 #endif

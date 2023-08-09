@@ -126,13 +126,25 @@ void Scanner::scanToken()
     }
 }
 
+/// @brief 读取字符判别词素是保留字还是用户自定义标识符
 void Scanner::identifier()
 {
     while (isAlphaNumeric(peek()))
     {
         advance();
     }
-    addToken(IDENTIFIER);
+    std::string text = source.substr(start, current);
+    TokenType type;
+    auto it = keywords.find(text);
+    if (it == keywords.end())
+    {
+        type = IDENTIFIER;
+    }
+    else
+    {
+        type = it->second;
+    }
+    addToken(type);
 }
 
 bool Scanner::isAlpha(char c)
